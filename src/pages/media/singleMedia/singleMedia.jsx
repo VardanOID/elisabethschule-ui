@@ -61,12 +61,11 @@ const SingleMedia = ({ link }) => {
                 playing: "true",
               },
             }}
-            controls
-            playinline
+            controls={true}
             playsinline
-            playing="true"
-            autoplay
-            light={currentMedia.img}
+            playsinline
+            playing={true}
+            autoplay={true}
           />
           <BackForwardNavigation backPath="/media" />
         </div>

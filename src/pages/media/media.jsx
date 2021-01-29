@@ -18,6 +18,9 @@ const Media = () => {
     <div className={styles.container}>
       <div className={styles.mediaWrapper}>
         {ASSETS.map((asset) => {
+          const videoPlay = () => {
+            history.push(`/media/${asset.path}`);
+          };
           return (
             <div className={styles.singleMedia} key={asset.id}>
               <div className={styles.imgWrapper}>
@@ -25,7 +28,7 @@ const Media = () => {
                   src={asset.img}
                   alt={asset.name}
                   className={styles.img}
-                  onClick={() => history.push(`/media/${asset.path}`)}
+                  onClick={videoPlay}
                 />
               </div>
               {/* <span className={styles.title}>{asset.name}</span> */}
