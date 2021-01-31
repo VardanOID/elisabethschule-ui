@@ -90,11 +90,14 @@ const Main = () => {
               // height={`${width}* 0.5625`}
               onStart={playVideoButton}
             />
+            <div className={styles.forwardIcon}>
+              <BackForwardNavigation forwardPath="/media" />
+            </div>
           </div>
         </div>
-        <div className={styles.forwardIcon}>
+        {/* <div className={styles.forwardIcon}>
           <BackForwardNavigation forwardPath="/media" />
-        </div>
+        </div> */}
       </div>
     </>
   );

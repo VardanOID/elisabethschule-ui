@@ -64,7 +64,7 @@ const SingleMedia = ({ link }) => {
               whiteSpace: "nowrap",
               padding: "4px 38px 12px",
               margin: "0px -1px -1px",
-              width: "150px",
+              width: "165px",
               backgroundImage: `url(${asset.i})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
