@@ -5,7 +5,8 @@ import BackForwardNavigation from "../../components/backForwardNavigation";
 import FooterIcons from "../../components/footerIcons";
 import { ASSETS } from "../../constants/index.jsx";
 import SingleMedia from "./singleMedia";
-
+import LogoHeader from "../../components/headerText_Logo";
+import I1 from "../../assets/images/videoCovers/pull-out.jpg";
 const Media = () => {
   const history = useHistory();
   const params = useParams();
@@ -16,11 +17,13 @@ const Media = () => {
 
   return (
     <div className={styles.container}>
+      <LogoHeader />
       <div className={styles.mediaWrapper}>
         {ASSETS.map((asset) => {
           const videoPlay = () => {
             history.push(`/media/${asset.path}`);
           };
+
           return (
             <div className={styles.singleMedia} key={asset.id}>
               <div className={styles.imgWrapper}>
@@ -35,6 +38,12 @@ const Media = () => {
             </div>
           );
         })}
+
+        <div className={styles.linkToWrapper}>
+          <a href="https://www.google.com/">
+            <div className={styles.linkTo}></div>
+          </a>
+        </div>
       </div>
       <div className={styles.navIcons}>
         <BackForwardNavigation

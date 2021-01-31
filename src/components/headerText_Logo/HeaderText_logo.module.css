@@ -1,0 +1,18 @@
+.imgsWrapper {
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid #4472c4;
+  /* margin-bottom: 20px; */
+}
+.imgstyles {
+  width: 50%;
+
+  margin-left: 25%;
+}
+
+@media screen and (max-width: 780px) {
+  .imgstyles {
+    width: 90%;
+    margin-left: 5%;
+  }
+}

@@ -64,7 +64,29 @@
   right: 16px;
   z-index: 999;
 }
-
+.linkToWrapper {
+  position: relative;
+  display: block;
+  width: calc(25% - 72px);
+  margin: 28px;
+  min-width: 280px;
+  background-image: url(../../assets/images/videoCovers/pull-out.jpg);
+  background-size: contain;
+  border: 4px solid #0f6ab4;
+  border-radius: 25px;
+}
+.linkTo {
+  position: relative;
+  display: block;
+  width: 25%;
+  height: 165px;
+  /* margin: 28px; */
+  min-width: 280px;
+  /* background-image: url(../../assets/images/videoCovers/pull-out.jpg);
+  background-size: contain; */
+  /* border: 4px solid #0f6ab4; */
+  border-radius: 25px;
+}
 @media screen and (max-width: 1200px) {
   .mediaWrapper {
     padding: 0;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player/youtube";
 import { useHistory } from "react-router-dom";
 import BackForwardNavigation from "../../components/backForwardNavigation";
@@ -7,6 +7,7 @@ import MainPic from "../../assets/images/director.jpg";
 import PlayIcon from "../../assets/images/icon_play.svg";
 // import Logo from "../../assets/images/briefkopf3.jpg";
 import Closeicon from "../../assets/images/close.png";
+import HeaderText_logo from "../../components/headerText_Logo";
 import styles from "./main.module.css";
 
 const Main = () => {
@@ -23,14 +24,28 @@ const Main = () => {
     setWidth("100%");
     setHeight("100%");
   };
+
+  const handleResize = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    setWidth(width);
+    setHeight(height);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [width]);
+
   return (
     <>
+      <HeaderText_logo />
       <div className={styles.container}>
-        <img
+        {/* <img
           src={Logo}
           alt="Elisabethsculle Malburg Logo"
           className={styles.logo}
-        />
+        /> */}
         <div className={styles.aligner}>
           {!playVideo ? (
             <div className={styles.imgWrapper}>
@@ -52,28 +67,30 @@ const Main = () => {
               />
             </>
           )}
-          <ReactPlayer
-            className={styles.video}
-            title="Elisabethsculle Malburg Intro"
-            // width="100%"
-            // height="100%"
-            url="https://www.youtube.com/embed/Aijz85tAa2w"
-            fileConfig={{
-              attributes: {
-                autoPlay: "true",
-                playing: "true",
-              },
-            }}
-            controls
-            playinline
-            playsinline
-            playing
-            autoplay
-            light={MainPic}
-            width={width}
-            height={height}
-            onStart={playVideoButton}
-          />
+          <div className={styles.videoWrapper}>
+            <ReactPlayer
+              className={styles.video}
+              title="Elisabethsculle Malburg Intro"
+              width={width / 1.5}
+              height={`${(width / 1.5) * 0.5625}px`}
+              url="https://www.youtube.com/embed/Aijz85tAa2w"
+              fileConfig={{
+                attributes: {
+                  autoPlay: "true",
+                  playing: "true",
+                },
+              }}
+              controls
+              playinline
+              playsinline
+              playing
+              autoplay
+              light={MainPic}
+              // width={width}
+              // height={`${width}* 0.5625`}
+              onStart={playVideoButton}
+            />
+          </div>
         </div>
         <div className={styles.forwardIcon}>
           <BackForwardNavigation forwardPath="/media" />
