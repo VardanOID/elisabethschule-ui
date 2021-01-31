@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/elisabethschule-ui/static/css/main.e3f1546c.chunk.css",
-    "main.js": "/elisabethschule-ui/static/js/main.f44a9122.chunk.js",
-    "main.js.map": "/elisabethschule-ui/static/js/main.f44a9122.chunk.js.map",
+    "main.css": "/elisabethschule-ui/static/css/main.84473cc0.chunk.css",
+    "main.js": "/elisabethschule-ui/static/js/main.802b05a8.chunk.js",
+    "main.js.map": "/elisabethschule-ui/static/js/main.802b05a8.chunk.js.map",
     "runtime-main.js": "/elisabethschule-ui/static/js/runtime-main.c1a4d9ea.js",
     "runtime-main.js.map": "/elisabethschule-ui/static/js/runtime-main.c1a4d9ea.js.map",
     "static/js/2.6ab53682.chunk.js": "/elisabethschule-ui/static/js/2.6ab53682.chunk.js",
     "static/js/2.6ab53682.chunk.js.map": "/elisabethschule-ui/static/js/2.6ab53682.chunk.js.map",
     "index.html": "/elisabethschule-ui/index.html",
-    "static/css/main.e3f1546c.chunk.css.map": "/elisabethschule-ui/static/css/main.e3f1546c.chunk.css.map",
+    "static/css/main.84473cc0.chunk.css.map": "/elisabethschule-ui/static/css/main.84473cc0.chunk.css.map",
     "static/js/2.6ab53682.chunk.js.LICENSE.txt": "/elisabethschule-ui/static/js/2.6ab53682.chunk.js.LICENSE.txt",
     "static/media/Elisabeth_Siegel.6eb6b6d8.jpg": "/elisabethschule-ui/static/media/Elisabeth_Siegel.6eb6b6d8.jpg",
     "static/media/TextLogo.b281e424.png": "/elisabethschule-ui/static/media/TextLogo.b281e424.png",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.c1a4d9ea.js",
     "static/js/2.6ab53682.chunk.js",
-    "static/css/main.e3f1546c.chunk.css",
-    "static/js/main.f44a9122.chunk.js"
+    "static/css/main.84473cc0.chunk.css",
+    "static/js/main.802b05a8.chunk.js"
   ]
 }
