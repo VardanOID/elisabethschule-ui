@@ -9,6 +9,7 @@ import { ASSETS } from "../../../constants/index.jsx";
 import { ASSETS1 } from "../../../constants/test.jsx";
 import styles from "./singleMedia.module.css";
 import LogoHeader from "../../../components/headerText_Logo";
+import { useMediaQuery } from "react-responsive";
 const SingleMedia = ({ link }) => {
   const [width, setWidth] = useState("40vw");
   const [height, setHeight] = useState("30vw");
@@ -34,7 +35,7 @@ const SingleMedia = ({ link }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
-
+  const isMobile = useMediaQuery({ query: "(max-width: 1200px)" });
   return (
     <>
       <LogoHeader />
@@ -58,13 +59,12 @@ const SingleMedia = ({ link }) => {
           {ASSETS.map((asset) => {
             const mystyle = {
               display: "block",
-
               color: "#fff",
               fontWeight: "600",
               whiteSpace: "nowrap",
-              padding: "4px 38px 12px",
+              padding: "4px 0% 4px 15%",
               margin: "0px -1px -1px",
-              width: "165px",
+              width: "200px",
               backgroundImage: `url(${asset.i})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -74,14 +74,30 @@ const SingleMedia = ({ link }) => {
               cursor: "pointer",
               textDecoration: "none",
             };
-
+            const mystyle1 = {
+              display: "block",
+              color: "#fff",
+              fontWeight: "600",
+              whiteSpace: "nowrap",
+              padding: "4px 0% 4px 25%",
+              margin: "0px -1px -1px",
+              width: "200px",
+              backgroundImage: `url(${asset.i})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              border: "6px solid transparent",
+              borderRadius: "10px",
+              opacity: "0.9",
+              cursor: "pointer",
+              textDecoration: "none",
+            };
             return (
               <NavLink
                 to={`/media/${asset.path}`}
                 activeClassName={styles.active}
                 key={asset.path}
                 className={styles.item}
-                style={mystyle}
+                style={isMobile ? mystyle1 : mystyle}
                 // onClick={() => {
                 //   setMyColor("black");
                 // }}

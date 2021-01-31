@@ -1,9 +1,13 @@
 .container {
-  width: calc(100vw - 48px);
+  /* width: calc(100vw - 48px);
   height: 100vh;
   padding: 24px;
   display: grid;
-  align-items: center;
+  align-items: center; */
+  width: calc(100vw - 48px);
+  height: 100vh;
+  padding: 0 0 24px 0;
+  display: grid;
 }
 .logo {
   max-width: 100%;
@@ -41,8 +45,8 @@
   max-height: 420px; */
   margin: auto;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 2.5%;
+  /* transform: translateY(-50%); */
 }
 .video {
   width: 100%;
