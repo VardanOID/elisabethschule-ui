@@ -73,7 +73,7 @@ const Main = () => {
               title="Elisabethsculle Malburg Intro"
               width={width / 1.5}
               height={`${(width / 1.5) * 0.5625}px`}
-              url="https://www.youtube.com/embed/Aijz85tAa2w"
+              url="https://www.youtube.com/embed/MXmeGmQfU00"
               fileConfig={{
                 attributes: {
                   autoPlay: "true",
@@ -86,8 +86,6 @@ const Main = () => {
               playing
               autoplay
               light={MainPic}
-              // width={width}
-              // height={`${width}* 0.5625`}
               onStart={playVideoButton}
             />
             <div className={styles.forwardIcon}>

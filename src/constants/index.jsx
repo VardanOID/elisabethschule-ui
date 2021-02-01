@@ -26,7 +26,7 @@ export const ASSETS = [
   {
     id: 2,
     name: "Die neue Schule",
-    videoLink: "https://www.youtube.com/embed/ou8Q4QSv01g",
+    videoLink: "https://www.youtube.com/embed/se9_uvgxtHk",
     path: "die-neue-schule",
     img: IMG2,
     i: i1,
@@ -34,7 +34,7 @@ export const ASSETS = [
   {
     id: 3,
     name: "Ganztagsschule",
-    videoLink: "https://www.youtube.com/embed/X36iTbpEA2k",
+    videoLink: "https://www.youtube.com/embed/HhFgUHFaOIQ",
     path: "ganztagsschule",
     img: IMG3,
     i: i2,
@@ -42,7 +42,7 @@ export const ASSETS = [
   {
     id: 4,
     name: "Miteinander",
-    videoLink: "https://www.youtube.com/embed/yt6WGSpGUJI",
+    videoLink: "https://www.youtube.com/embed/_PTF6sMQHG4",
     path: "miteinander",
     img: IMG4,
     i: i3,
@@ -50,7 +50,7 @@ export const ASSETS = [
   {
     id: 5,
     name: "Digitalisierung",
-    videoLink: "https://www.youtube.com/embed/dIwRyvspFvY",
+    videoLink: "https://www.youtube.com/embed/JEzRgekzL_E",
     path: "digitalisierung",
     img: IMG5,
     i: i4,
@@ -58,7 +58,7 @@ export const ASSETS = [
   {
     id: 6,
     name: "Sport & Bewegung",
-    videoLink: "https://www.youtube.com/embed/vf9A3HrS1Iw",
+    videoLink: "https://www.youtube.com/embed/X1dfjEy7I6M",
     path: "sport",
     img: IMG6,
     i: i5,
@@ -66,7 +66,7 @@ export const ASSETS = [
   {
     id: 7,
     name: "Bilingualer Unterricht",
-    videoLink: "https://www.youtube.com/embed/aDDACOaUk-o",
+    videoLink: "https://www.youtube.com/embed/GTzgGoyyWU8",
     path: "bilingualer-unterricht",
     img: IMG7,
     i: i6,
@@ -74,7 +74,7 @@ export const ASSETS = [
   {
     id: 8,
     name: "Sprachen & Fahrten",
-    videoLink: "https://youtube.com/embed/zSx7HZiflso",
+    videoLink: "https://www.youtube.com/embed/ubUf-ZzHZJY",
     path: "sprachen-fahrten",
     img: IMG8,
     i: i7,
@@ -82,7 +82,7 @@ export const ASSETS = [
   {
     id: 9,
     name: "Erasmus+",
-    videoLink: "https://youtube.com/embed/CXAKe4bPD7M",
+    videoLink: "https://www.youtube.com/embed/8c8ogRVqtfQ",
     path: "erasmus-plus",
     img: IMG9,
     i: i8,
@@ -90,7 +90,7 @@ export const ASSETS = [
   {
     id: 10,
     name: "Musik, Theater & Kunst",
-    videoLink: "https://youtube.com/embed/siaItIViPdA",
+    videoLink: "https://www.youtube.com/embed/wqX3SKkeqgo",
     path: "musik-theater-kunst",
     img: IMG10,
     i: i9,
@@ -98,7 +98,7 @@ export const ASSETS = [
   {
     id: 11,
     name: "Naturwissenschaften",
-    videoLink: "https://youtube.com/embed/k3inpFtvYfc",
+    videoLink: "https://www.youtube.com/embed/uxY2ihGscBs",
     path: "naturwissenschaften",
     img: IMG11,
     i: i10,
@@ -106,16 +106,9 @@ export const ASSETS = [
   {
     id: 12,
     name: "Pull-Out",
-    videoLink: "https://youtube.com/embed/bF3WFTl4dVc",
+    videoLink: "https://www.youtube.com/embed/wqX3SKkeqgo",
     path: "pull-out",
     img: IMG12,
     i: i11,
   },
-  // {
-  //   id: 13,
-  //   name: "Pull-Out",
-  //   linkTo: "https://www.google.com/",
-  //   path: "pull-outt",
-  //   img: IMG13,
-  // },
 ];
