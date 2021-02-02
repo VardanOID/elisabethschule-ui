@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elisabethschule Marburg</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
+    ></script>
+    <style>
+      #panorama {
+        width: 3200px;
+        height: 900px;
+        max-width: 100%;
+        max-height: 100vh;
+      }
+      div.pnlm-tooltip span {
+        max-width: inherit;
+      }
+      .customInfoIcon {
+        background-image: none;
+
+        width: 380px;
+        height: 150px;
+
+        margin: 50px -50px;
+      }
+      .customInfoIcon1 {
+        background-image: none;
+        width: 210px;
+        height: 110px;
+      }
+      .customInfoIcon1_1 {
+        background-image: none;
+        width: 280px;
+        height: 190px;
+      }
+      .customInfoIcon4 {
+        background-image: none;
+        width: 160px;
+        height: 110px;
+      }
+      .customInfoIcon5 {
+        background-image: none;
+        width: 320px;
+        height: 180px;
+      }
+      .customInfoIcon5_1 {
+        background-image: none;
+        width: 420px;
+        height: 300px;
+      }
+      .customInfoIcon5_2 {
+        background-image: none;
+        width: 310px;
+        height: 215px;
+      }
+      .customInfoIcon6 {
+        background-image: none;
+        width: 310px;
+        height: 180px;
+      }
+      .customInfoIcon6_1 {
+        background-image: none;
+        width: 325px;
+        height: 220px;
+      }
+      .customInfoIcon7 {
+        background-image: none;
+        width: 300px;
+        height: 180px;
+      }
+      .customInfoIcon8 {
+        background-image: none;
+        width: 330px;
+        height: 210px;
+      }
+      .customInfoIcon9 {
+        background-image: none;
+        width: 340px;
+        height: 210px;
+      }
+      .customInfoIcon11 {
+        width: 300px;
+        height: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panorama"></div>
+
+    <script>
+      pannellum.viewer("panorama", {
+        default: {
+          firstScene: "_2_Eingang_Treppenhaus", //"_2_Eingang_Treppenhaus",
+
+          sceneFadeDuration: 1000,
+          autoLoad: true,
+        },
+
+        scenes: {
+          _2_Eingang_Treppenhaus: {
+            title: "Eingang Treppenhaus",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./2_Eingang_Treppenhaus1.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: 2,
+                yaw: 3,
+                type: "scene",
+                sceneId: "_3_Aula_III",
+              },
+              {
+                pitch: 20,
+                yaw: -90,
+                type: "info",
+                cssClass: "customInfoIcon",
+
+                text:
+                  '<div>Die neue Schule<iframe width="360" height="240" src="https://www.youtube.com/embed/se9_uvgxtHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -2,
+                yaw: -182,
+                type: "scene",
+                sceneId: "_12_Spielplatz_II12",
+              },
+            ],
+          },
+
+          _3_Aula_III: {
+            title: "Aula III",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./3_Aula_III3.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: 1.5,
+                yaw: 8,
+
+                type: "info",
+                cssClass: "customInfoIcon1",
+                text:
+                  '<div>Miteinander<iframe width="360" height="240" src="https://www.youtube.com/embed/_PTF6sMQHG4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -8.5,
+                yaw: 105,
+                type: "info",
+                cssClass: "customInfoIcon1_1",
+                text:
+                  '<div>Naturwissenschaften<iframe width="360" height="180" src="https://www.youtube.com/embed/uxY2ihGscBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -2,
+                yaw: -170,
+                type: "scene",
+                sceneId: "_4_Cafeteria",
+              },
+              {
+                pitch: -2,
+                yaw: -140,
+                type: "scene",
+                sceneId: "_2_Eingang_Treppenhaus",
+              },
+            ],
+          },
+
+          _4_Cafeteria: {
+            title: "Cafeteria",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./4_Cafeteria4.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: -14,
+                yaw: -9,
+                type: "info",
+                cssClass: "customInfoIcon4",
+                text:
+                  '<div>Ganztagsschule<iframe width="320" height="240" src="https://www.youtube.com/embed/HhFgUHFaOIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -4,
+                yaw: -31,
+                type: "scene",
+                sceneId: "_5_Erdkunderaum",
+              },
+              {
+                pitch: -4,
+                yaw: -101,
+                type: "scene",
+                sceneId: "_3_Aula_III",
+              },
+            ],
+          },
+
+          _5_Erdkunderaum: {
+            title: "Erdkunderaum",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./5_Erdkunderaum5.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: -4,
+                yaw: 30,
+                type: "scene",
+                sceneId: "_6_Chemieraum",
+              },
+              {
+                pitch: 0,
+                yaw: -4,
+                type: "info",
+                cssClass: "customInfoIcon5",
+                text:
+                  '<div>Bilingualer Unterricht<iframe width="420" height="200" src="https://www.youtube.com/embed/GTzgGoyyWU8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: 5,
+                yaw: 82,
+                type: "info",
+                cssClass: "customInfoIcon5_1",
+                text:
+                  '<div>Sprachen & Fahrten<iframe width="320" height="200" src="https://www.youtube.com/embed/ubUf-ZzHZJY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -2,
+                yaw: 166,
+                type: "info",
+                cssClass: "customInfoIcon5_2",
+                text:
+                  '<div>Erasmus+<iframe width="320" height="240" src="https://www.youtube.com/embed/8c8ogRVqtfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -4,
+                yaw: 205,
+                type: "scene",
+                sceneId: "_4_Cafeteria",
+              },
+            ],
+          },
+
+          _6_Chemieraum: {
+            title: "Chemieraum",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./6_Chemieraum6.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: -4,
+                yaw: 40,
+                type: "scene",
+                sceneId: "_7_MMLZ7",
+              },
+              {
+                pitch: -1,
+                yaw: -38,
+                type: "info",
+                cssClass: "customInfoIcon6",
+                text:
+                  '<div>Pull-Out<iframe width="460" height="240" src="https://www.youtube.com/embed/r2bxJmsSrTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: 0,
+                yaw: 83,
+                type: "info",
+                cssClass: "customInfoIcon6_1",
+                text:
+                  '<div>Naturwissenschaften<iframe width="560" height="240" src="https://www.youtube.com/embed/uxY2ihGscBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -4,
+                yaw: 128,
+                type: "scene",
+                sceneId: "_5_Erdkunderaum",
+              },
+            ],
+          },
+
+          _7_MMLZ7: {
+            title: "Digitalisierung",
+            hfov: 110,
+            pitch: 0,
+            yaw: 180,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./7_MMLZ7_1.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: -2,
+                yaw: -10,
+                type: "scene",
+                sceneId: "_6_Chemieraum",
+              },
+              {
+                pitch: 3,
+                yaw: 182,
+                type: "info",
+                cssClass: "customInfoIcon7",
+                text:
+                  '<div>Digitalisierung<iframe width="420" height="240" src="https://www.youtube.com/embed/JEzRgekzL_E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: 0,
+                yaw: 163,
+                type: "scene",
+                sceneId: "_8_Musikraum",
+              },
+            ],
+          },
+
+          _8_Musikraum: {
+            title: "Musik, Theater & Kunst",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./8_Musikraum8.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: -2,
+                yaw: -142,
+                type: "scene",
+                sceneId: "_9_Bibliothek_I",
+              },
+              {
+                pitch: 10,
+                yaw: 0,
+                type: "info",
+                cssClass: "customInfoIcon8",
+                text:
+                  '<div>Musik, Theater & Kunst<iframe width="420" height="180" src="https://www.youtube.com/embed/wqX3SKkeqgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -2,
+                yaw: 140,
+                type: "scene",
+                sceneId: "_7_MMLZ7",
+              },
+            ],
+          },
+
+          _9_Bibliothek_I: {
+            title: "Bibliothek",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./9_Bibliothek_I9.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: -7,
+                yaw: -22,
+                type: "scene",
+                sceneId: "_10_Spinne_II10",
+              },
+              {
+                pitch: -11,
+                yaw: 9,
+                type: "info",
+                cssClass: "customInfoIcon9",
+                text:
+                  '<div>Ganztagsschule<iframe width="450" height="240" src="https://www.youtube.com/embed/HhFgUHFaOIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: -7,
+                yaw: 160,
+                type: "scene",
+                sceneId: "_8_Musikraum:",
+              },
+            ],
+          },
+
+          _10_Spinne_II10: {
+            title: "Spinne",
+            hfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./10_Spinne_II10.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: 3,
+                yaw: 90,
+                type: "scene",
+                sceneId: "_11_Bolzplatz_I11",
+              },
+              {
+                pitch: 3,
+                yaw: 185,
+                type: "scene",
+                sceneId: "_9_Bibliothek_I",
+              },
+            ],
+          },
+
+          _11_Bolzp1latz_I1: {
+            title: "Sport & Bewegung",
+            hfov: 110,
+            pitch: 0,
+            yaw: 214,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./11_Bolzplatz_I11.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: 3,
+                yaw: 160,
+                type: "scene",
+                sceneId: "_12_Spielplatz_II12",
+              },
+              {
+                pitch: 8,
+                yaw: -65,
+                type: "info",
+                cssClass: "customInfoIcon11",
+                text:
+                  '<div>Sport & Bewegung<iframe width="320" height="240" src="https://www.youtube.com/embed/X1dfjEy7I6M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>',
+              },
+              {
+                pitch: 5,
+                yaw: -35,
+                type: "scene",
+                sceneId: "_10_Spinne_II10",
+              },
+            ],
+          },
+
+          _12_Spielplatz_II12: {
+            title: "Spielplatz",
+            hfov: 110,
+            pitch: 0,
+            yaw: 50,
+            compass: true,
+            type: "equirectangular",
+            panorama: "./12_Spielplatz_II12.jpg",
+            multiRes: {
+              fallbackPath: "/fallback/%s",
+              extension: "jpg",
+              tileResolution: 512,
+              maxLevel: 6,
+              cubeResolution: 8432,
+            },
+
+            hotSpots: [
+              {
+                pitch: 7,
+                yaw: 87,
+                type: "scene",
+                sceneId: "_2_Eingang_Treppenhaus",
+              },
+              {
+                pitch: 4,
+                yaw: 210,
+                type: "scene",
+                sceneId: "_11_Bolzplatz_I11",
+              },
+            ],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
