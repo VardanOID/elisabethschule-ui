@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/elisabethschule-ui/static/css/main.6d7f790d.chunk.css",
-    "main.js": "/elisabethschule-ui/static/js/main.e6bb891d.chunk.js",
-    "main.js.map": "/elisabethschule-ui/static/js/main.e6bb891d.chunk.js.map",
+    "main.js": "/elisabethschule-ui/static/js/main.d8aa95d8.chunk.js",
+    "main.js.map": "/elisabethschule-ui/static/js/main.d8aa95d8.chunk.js.map",
     "runtime-main.js": "/elisabethschule-ui/static/js/runtime-main.c1a4d9ea.js",
     "runtime-main.js.map": "/elisabethschule-ui/static/js/runtime-main.c1a4d9ea.js.map",
     "static/js/2.1c1e87f5.chunk.js": "/elisabethschule-ui/static/js/2.1c1e87f5.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/media.module.css": "/elisabethschule-ui/static/media/Virtueller_Rundgang.f50b2771.jpg",
     "static/media/App.css": "/elisabethschule-ui/static/media/bg2.13578d7c.jpg",
     "static/media/bilingualer-unterricht.be4cc99b.jpg": "/elisabethschule-ui/static/media/bilingualer-unterricht.be4cc99b.jpg",
-    "static/media/die-neue-schule.746fc827.jpg": "/elisabethschule-ui/static/media/die-neue-schule.746fc827.jpg",
+    "static/media/die-neue-schule.71eb601d.jpg": "/elisabethschule-ui/static/media/die-neue-schule.71eb601d.jpg",
     "static/media/digitalisierung.89bf149e.jpg": "/elisabethschule-ui/static/media/digitalisierung.89bf149e.jpg",
     "static/media/main.module.css": "/elisabethschule-ui/static/media/director.19f1698f.jpg",
     "static/media/elizabetschule_small.6e5a0b93.gif": "/elisabethschule-ui/static/media/elizabetschule_small.6e5a0b93.gif",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.c1a4d9ea.js",
     "static/js/2.1c1e87f5.chunk.js",
     "static/css/main.6d7f790d.chunk.css",
-    "static/js/main.e6bb891d.chunk.js"
+    "static/js/main.d8aa95d8.chunk.js"
   ]
 }
