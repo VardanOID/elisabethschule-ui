@@ -8,7 +8,7 @@ const bgClassNameIndex = Math.floor(Math.random() * 2) + 1;
 function App() {
   return (
     <div className={`App bg${bgClassNameIndex}`}>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/elisabethschule-ui">
         {/* elisabethschule-ui */}
         <Switch>
           <Route exact path="/" component={Main} />
