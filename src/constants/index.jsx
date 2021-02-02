@@ -106,7 +106,7 @@ export const ASSETS = [
   {
     id: 12,
     name: "Pull-Out",
-    videoLink: "https://www.youtube.com/embed/wqX3SKkeqgo",
+    videoLink: "https://www.youtube.com/embed/r2bxJmsSrTk",
     path: "pull-out",
     img: IMG12,
     i: i11,

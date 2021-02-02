@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player/youtube";
 import { useHistory } from "react-router-dom";
 import BackForwardNavigation from "../../components/backForwardNavigation";
-import Logo from "../../assets/images/logo-elizabethschulle.png";
+
 import MainPic from "../../assets/images/director.jpg";
 import PlayIcon from "../../assets/images/icon_play.svg";
-// import Logo from "../../assets/images/briefkopf3.jpg";
+
 import Closeicon from "../../assets/images/close.png";
 import HeaderText_logo from "../../components/headerText_Logo";
 import styles from "./main.module.css";
@@ -41,11 +41,6 @@ const Main = () => {
     <>
       <HeaderText_logo />
       <div className={styles.container}>
-        {/* <img
-          src={Logo}
-          alt="Elisabethsculle Malburg Logo"
-          className={styles.logo}
-        /> */}
         <div className={styles.aligner}>
           {!playVideo ? (
             <div className={styles.imgWrapper}>

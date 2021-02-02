@@ -7,6 +7,7 @@ import { ASSETS } from "../../constants/index.jsx";
 import SingleMedia from "./singleMedia";
 import LogoHeader from "../../components/headerText_Logo";
 import I1 from "../../assets/images/videoCovers/pull-out.jpg";
+import { Link } from "react-router-dom";
 const Media = () => {
   const history = useHistory();
   const params = useParams();
@@ -40,7 +41,7 @@ const Media = () => {
         })}
 
         <div className={styles.linkToWrapper}>
-          <a href="https://www.google.com/">
+          <a href={process.env.PUBLIC_URL + "/panorama/index.html"}>
             <div className={styles.linkTo}></div>
           </a>
         </div>

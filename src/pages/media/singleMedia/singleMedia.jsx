@@ -62,14 +62,15 @@ const SingleMedia = ({ link }) => {
               color: "#fff",
               fontWeight: "600",
               whiteSpace: "nowrap",
-              padding: "4px 0% 4px 15%",
-              margin: "0px -1px -1px",
-              width: "200px",
+              padding: "0.5vw 0% 0px 15%",
+              margin: `0px -1px ${(width / 47.5) * 0.5625}px -1px`,
+              width: "50%",
+              fontSize: "0.83333333328vw",
+              height: `${(width / 29.6) * 0.5625}px`,
               backgroundImage: `url(${asset.i})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              border: "6px solid transparent",
-              borderRadius: "10px",
+              borderRadius: "5px",
               opacity: "0.9",
               cursor: "pointer",
               textDecoration: "none",
@@ -98,9 +99,6 @@ const SingleMedia = ({ link }) => {
                 key={asset.path}
                 className={styles.item}
                 style={isMobile ? mystyle1 : mystyle}
-                // onClick={() => {
-                //   setMyColor("black");
-                // }}
               >
                 {asset.name}
               </NavLink>
