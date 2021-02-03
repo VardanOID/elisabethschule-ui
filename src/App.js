@@ -8,7 +8,7 @@ const bgClassNameIndex = Math.floor(Math.random() * 2) + 1;
 function App() {
   return (
     <div className={`App bg${bgClassNameIndex}`}>
-      <BrowserRouter basename="https://elisabethschule.de/fileadmin/pannellum">
+      <BrowserRouter basename="/fileadmin/pannellum/">
         {/* elisabethschule-ui */}
         {/* https://elisabethschule.de/fileadmin/pannellum */}
         <Switch>
