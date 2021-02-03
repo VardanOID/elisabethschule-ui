@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/elisabethschule-ui/static/css/main.6d7f790d.chunk.css",
-    "main.js": "/elisabethschule-ui/static/js/main.d8aa95d8.chunk.js",
-    "main.js.map": "/elisabethschule-ui/static/js/main.d8aa95d8.chunk.js.map",
+    "main.css": "/elisabethschule-ui/static/css/main.c55e5663.chunk.css",
+    "main.js": "/elisabethschule-ui/static/js/main.189ac66b.chunk.js",
+    "main.js.map": "/elisabethschule-ui/static/js/main.189ac66b.chunk.js.map",
     "runtime-main.js": "/elisabethschule-ui/static/js/runtime-main.c1a4d9ea.js",
     "runtime-main.js.map": "/elisabethschule-ui/static/js/runtime-main.c1a4d9ea.js.map",
-    "static/js/2.1c1e87f5.chunk.js": "/elisabethschule-ui/static/js/2.1c1e87f5.chunk.js",
-    "static/js/2.1c1e87f5.chunk.js.map": "/elisabethschule-ui/static/js/2.1c1e87f5.chunk.js.map",
+    "static/js/2.980bc26b.chunk.js": "/elisabethschule-ui/static/js/2.980bc26b.chunk.js",
+    "static/js/2.980bc26b.chunk.js.map": "/elisabethschule-ui/static/js/2.980bc26b.chunk.js.map",
     "index.html": "/elisabethschule-ui/index.html",
-    "static/css/main.6d7f790d.chunk.css.map": "/elisabethschule-ui/static/css/main.6d7f790d.chunk.css.map",
-    "static/js/2.1c1e87f5.chunk.js.LICENSE.txt": "/elisabethschule-ui/static/js/2.1c1e87f5.chunk.js.LICENSE.txt",
+    "static/css/main.c55e5663.chunk.css.map": "/elisabethschule-ui/static/css/main.c55e5663.chunk.css.map",
+    "static/js/2.980bc26b.chunk.js.LICENSE.txt": "/elisabethschule-ui/static/js/2.980bc26b.chunk.js.LICENSE.txt",
+    "static/media/Button_2.b43a8fb3.png": "/elisabethschule-ui/static/media/Button_2.b43a8fb3.png",
     "static/media/Elisabeth_Siegel.6eb6b6d8.jpg": "/elisabethschule-ui/static/media/Elisabeth_Siegel.6eb6b6d8.jpg",
-    "static/media/TextLogo.9f3c3796.png": "/elisabethschule-ui/static/media/TextLogo.9f3c3796.png",
+    "static/media/TextLogo1.c281b522.png": "/elisabethschule-ui/static/media/TextLogo1.c281b522.png",
     "static/media/media.module.css": "/elisabethschule-ui/static/media/Virtueller_Rundgang.f50b2771.jpg",
     "static/media/App.css": "/elisabethschule-ui/static/media/bg2.13578d7c.jpg",
     "static/media/bilingualer-unterricht.be4cc99b.jpg": "/elisabethschule-ui/static/media/bilingualer-unterricht.be4cc99b.jpg",
@@ -23,6 +24,7 @@
     "static/media/ganztagsschule.b443b606.jpg": "/elisabethschule-ui/static/media/ganztagsschule.b443b606.jpg",
     "static/media/icon_burger.976b5194.png": "/elisabethschule-ui/static/media/icon_burger.976b5194.png",
     "static/media/icon_play.b36e78ec.svg": "/elisabethschule-ui/static/media/icon_play.b36e78ec.svg",
+    "static/media/logoForMainPage.34481ebb.png": "/elisabethschule-ui/static/media/logoForMainPage.34481ebb.png",
     "static/media/miteinander.d682440a.jpg": "/elisabethschule-ui/static/media/miteinander.d682440a.jpg",
     "static/media/musik-theater-kunst.2f749f02.jpg": "/elisabethschule-ui/static/media/musik-theater-kunst.2f749f02.jpg",
     "static/media/naturwissenschaften.4c5cf89c.jpg": "/elisabethschule-ui/static/media/naturwissenschaften.4c5cf89c.jpg",
@@ -32,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c1a4d9ea.js",
-    "static/js/2.1c1e87f5.chunk.js",
-    "static/css/main.6d7f790d.chunk.css",
-    "static/js/main.d8aa95d8.chunk.js"
+    "static/js/2.980bc26b.chunk.js",
+    "static/css/main.c55e5663.chunk.css",
+    "static/js/main.189ac66b.chunk.js"
   ]
 }
