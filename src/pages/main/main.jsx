@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player/youtube";
 import { useHistory } from "react-router-dom";
 import BackForwardNavigation from "../../components/backForwardNavigation";
-
+import ButtonMainPage from "../../components/buttonMainPage";
 import MainPic from "../../assets/images/director.jpg";
 import PlayIcon from "../../assets/images/icon_play.svg";
 
@@ -83,15 +83,17 @@ const Main = () => {
               light={MainPic}
               onStart={playVideoButton}
             />
-            <div className={styles.forwardIcon}>
+
+            {/* <div className={styles.forwardIcon}>
               <BackForwardNavigation forwardPath="/media" />
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <div className={styles.forwardIcon}>
           <BackForwardNavigation forwardPath="/media" />
         </div> */}
       </div>
+      <ButtonMainPage />
     </>
   );
 };

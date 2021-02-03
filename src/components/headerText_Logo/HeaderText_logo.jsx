@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/images/TextLogo.png";
+import Logo from "../../assets/images/TextLogo1.png";
 import styles from "./HeaderText_logo.module.css";
 function HeaderText_logo() {
   return (

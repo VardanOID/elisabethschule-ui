@@ -1,6 +1,7 @@
 .container {
   width: calc(100vw - 48px);
-  height: 100vh;
+  /* height: 100vh; */
+  /* height: 100%; */
   padding: 0 0 24px 0;
   display: grid;
 }
@@ -84,11 +85,11 @@
 }
 @media screen and (max-width: 850px) {
   .container {
-    width: calc(100vw - 48px);
-    height: 100vh;
+    /* width: calc(100vw - 48px); */
+    /* height: 100vh; */
     padding: 24px;
-    display: grid;
-    align-items: flex-start;
+    /* display: grid;
+    align-items: flex-start; */
   }
   .aligner {
     width: 100%;

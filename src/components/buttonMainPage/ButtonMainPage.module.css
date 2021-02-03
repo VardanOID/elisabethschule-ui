@@ -1,0 +1,23 @@
+.icon {
+  width: 3vw;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -0.5vw;
+}
+
+.iconFooter {
+  margin-top: -2.5vw;
+  width: 97%;
+}
+
+@media screen and (max-width: 450px) {
+  .icon {
+    width: 3vh;
+    z-index: 5;
+    margin-top: 1vw;
+  }
+  .iconFooter {
+    transform: scale(2.8);
+    width: 50%;
+  }
+}
