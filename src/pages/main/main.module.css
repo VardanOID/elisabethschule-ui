@@ -51,7 +51,7 @@
   position: relative;
   width: calc(100% - 72px);
   height: calc(100% - 210px);
-  margin: 4px auto 16px;
+  margin: 4px auto 0px;
 }
 .close {
   position: absolute;

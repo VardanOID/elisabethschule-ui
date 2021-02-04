@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   padding: 1% 36px 24px 36px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .items {
   width: 25%;
-  height: calc(100% + 80px);
+  /* height: calc(100% + 80px); */
   display: flex;
   flex-direction: column;
   overflow-y: auto;
